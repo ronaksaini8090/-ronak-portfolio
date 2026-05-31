@@ -14,8 +14,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ronak Portfolio",
-  description: "Futuristic AI Portfolio",
+  title: "Ronak Saini | Full Stack Developer",
+description:
+"Portfolio of Ronak Saini - Full Stack Developer specializing in Next.js, React, AI integrations, modern web applications and scalable systems.",
+  keywords: [
+    "Ronak Saini",
+    "Full Stack Developer",
+    "React",
+    "Next.js",
+    "Portfolio",
+    "Web Developer",
+  ],
 };
 
 export default function RootLayout({

@@ -25,7 +25,10 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="relative z-10 px-6 py-40">
+    <section
+    id="experience"
+    className="relative z-10 px-6 py-40"
+  >
 
       <motion.h2
         initial={{

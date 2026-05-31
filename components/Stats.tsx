@@ -5,19 +5,19 @@ import { motion } from "framer-motion";
 const stats = [
   {
     number: "15+",
-    label: "Projects Built",
+    label: "Projects",
   },
   {
-    number: "10+",
-    label: "Technologies",
+    number: "500+",
+    label: "DSA Problems",
   },
   {
-    number: "100%",
-    label: "Responsive Design",
+    number: "5+",
+    label: "Hackathons",
   },
   {
-    number: "24/7",
-    label: "Learning Mode",
+    number: "3+",
+    label: "Years Learning",
   },
 ];
 
@@ -32,7 +32,7 @@ export default function Stats() {
             key={index}
             initial={{
               opacity: 0,
-              y: 60,
+              y: 50,
             }}
             whileInView={{
               opacity: 1,
@@ -46,20 +46,25 @@ export default function Stats() {
               y: -10,
               scale: 1.03,
             }}
-            className="rounded-[35px] border border-white/10 bg-white/5 p-10 text-center backdrop-blur-xl"
+            className="
+            rounded-[32px]
+            border
+            border-white/10
+            bg-white/5
+            p-8
+            text-center
+            backdrop-blur-xl
+            "
           >
-
-            <h3 className="text-5xl font-black text-cyan-400">
+            <h3 className="text-4xl font-black text-cyan-400">
               {stat.number}
             </h3>
 
-            <p className="mt-4 text-lg text-gray-400">
+            <p className="mt-4 text-gray-400">
               {stat.label}
             </p>
-
           </motion.div>
         ))}
-
       </div>
 
     </section>

@@ -15,23 +15,21 @@ const stacks = [
 
 export default function TechStack() {
   return (
-    <div className="mt-12 flex max-w-2xl flex-wrap gap-4">
+    <div className="mt-10 flex max-w-2xl flex-wrap gap-3">
 
       {stacks.map((tech, index) => (
         <motion.div
           key={index}
-          animate={{
-            y: [0, -10, 0],
+          whileHover={{
+            y: -5,
+            scale: 1.05,
           }}
           transition={{
-            repeat: Infinity,
-            duration: 3 + index,
+            duration: 0.2,
           }}
-          className="rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm uppercase tracking-[0.2em] text-gray-300 backdrop-blur-xl"
+          className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.15em] text-gray-300 backdrop-blur-xl sm:px-5 sm:py-3 sm:text-sm"
         >
-
           ✦ {tech}
-
         </motion.div>
       ))}
 

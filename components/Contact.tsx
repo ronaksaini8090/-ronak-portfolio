@@ -54,8 +54,9 @@ export default function Contact() {
               </p>
 
               <h3 className="mt-4 text-lg font-semibold break-all">
-                ronaksaini773@gmail.com
-              </h3>
+              <a href="mailto:ronaksaini773@gmail.com">
+  ronaksaini773@gmail.com
+</a>              </h3>
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-black/30 p-6">
@@ -64,7 +65,9 @@ export default function Contact() {
               </p>
 
               <h3 className="mt-4 text-lg font-semibold">
-                +91 8890025024
+              <a href="tel:+918890025024">
+  +91 8890025024
+</a>
               </h3>
             </div>
 

@@ -19,7 +19,10 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="relative z-10 px-6 py-32">
+    <section
+  id="skills"
+  className="relative z-10 px-6 py-32"
+>
 
       {/* Heading */}
       <motion.h2

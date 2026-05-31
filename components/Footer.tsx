@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 overflow-hidden border-t border-white/10 px-6 py-14">
+   <footer
+
+className="
+
+relative z-10 overflow-hidden border-t border-white/10 px-6 pt-14 pb-32" >
 
       {/* Glow */}
       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 via-purple-500/5 to-pink-500/5" />

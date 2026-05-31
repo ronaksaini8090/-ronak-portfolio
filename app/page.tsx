@@ -10,22 +10,22 @@ import Navbar from "@/components/Navbar";
 
 import ParticleBackground from "@/components/Particles";
 import Aurora from "@/components/Aurora";
-
 import Hero from "@/components/Hero";
+import About from "@/components/About";
+
 import Expertise from "@/components/Expertise";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Stats from "@/components/Stats";
 import Terminal from "@/components/Terminal";
-import TechMarquee from "@/components/TechMarquee";
+
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden bg-black text-white">
-
+<main className="relative overflow-hidden bg-black text-white pb-40">
       {/* Systems */}
       <ScrollProgress />
       <Loader />
@@ -47,7 +47,9 @@ export default function Home() {
       <div className="relative z-10">
         <Hero />
       </div>
-
+      <div className="relative z-10">
+  <About />
+</div>
       {/* Expertise */}
       <div className="relative z-10">
         <Expertise />
@@ -78,10 +80,7 @@ export default function Home() {
         <Terminal />
       </div>
 
-      {/* Tech Marquee */}
-      <div className="relative z-10">
-        <TechMarquee />
-      </div>
+     
 
       {/* Contact */}
       <div className="relative z-10">

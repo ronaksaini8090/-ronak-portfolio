@@ -8,8 +8,8 @@ export default function Loader() {
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
       transition={{
-        delay: 2.2,
-        duration: 1,
+        delay: 1,
+        duration: 0.6,
       }}
       className="pointer-events-none fixed inset-0 z-[9999] flex items-center justify-center bg-black"
     >
