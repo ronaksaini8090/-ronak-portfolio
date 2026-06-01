@@ -12,7 +12,7 @@ import Scene3D from "./Scene3D";
 
 export default function Hero() {
   return (
-    <section className="relative z-10 flex min-h-screen items-center overflow-hidden px-6 pt-32 pb-20">
+    <section className="relative z-10 flex min-h-screen items-center overflow-hidden px-6 pt-24 pb-16 md:pt-32 md:pb-20">
       
       <Scene3D />
 
@@ -156,8 +156,7 @@ export default function Hero() {
           </div>
 
           {/* Quick Stats */}
-          <div className="mt-6 grid w-full max-w-[420px] grid-cols-3 gap-4">
-
+          <div className="mt-6 grid w-full max-w-[420px] grid-cols-3 gap-2 sm:gap-4">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-xl">
               <h3 className="text-2xl font-black text-cyan-400">4+</h3>
               <p className="text-xs text-gray-400">

@@ -21,9 +21,9 @@ const certificates = [
 export default function Certifications() {
   return (
     <section
-      id="certifications"
-      className="relative z-10 px-6 py-40"
-    >
+    id="certifications"
+    className="relative z-10 px-6 py-40"
+  >
       <motion.h2
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}

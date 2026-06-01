@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Education() {
   return (
-    <section id="education" className="relative z-10 px-6 py-32">
+    <section id="education" className="relative z-10 px-6 py-40">
 
       <motion.h2
         initial={{ opacity: 0, y: 60 }}
