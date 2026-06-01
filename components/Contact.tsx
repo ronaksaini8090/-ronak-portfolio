@@ -90,8 +90,7 @@ export default function Contact() {
               href="mailto:ronaksaini773@gmail.com"
               className="inline-flex rounded-full border border-cyan-400 px-10 py-4 text-sm font-bold tracking-[0.3em] text-cyan-400 transition-all duration-300 hover:bg-cyan-400 hover:text-black"
             >
-              START A PROJECT
-            </a>
+LET'S CONNECT            </a>
 
           </div>
 

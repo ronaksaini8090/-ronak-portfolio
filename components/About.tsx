@@ -27,7 +27,7 @@ export default function About() {
           </p>
 
           <h2 className="text-5xl font-black leading-tight md:text-6xl">
-            Passionate about building futuristic digital systems.
+          Transforming ideas into scalable digital solutions.
           </h2>
 
         </motion.div>
@@ -42,10 +42,7 @@ export default function About() {
         >
 
           <p>
-            I’m Ronak Saini, a Computer Science Engineering student from
-            BK Birla Institute of Engineering & Technology, Pilani with a strong
-            focus on Full Stack Development, Data Structures & Algorithms,
-            and modern web technologies.
+          I’m Ronak Saini, a Computer Science Engineering student at BKBIET Pilani. I specialize in Full Stack Development, Data Structures & Algorithms, and building modern web applications with a strong focus on performance and user experience.
           </p>
 
           <p>

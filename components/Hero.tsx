@@ -31,8 +31,7 @@ export default function Hero() {
             transition={{ duration: 1 }}
             className="mb-6 text-xs uppercase tracking-[0.35em] text-cyan-400 sm:text-sm"
           >
-            SOFTWARE ENGINEER • FULL STACK • AI • DSA
-          </motion.p>
+FULL STACK DEVELOPER • CSE STUDENT • AI ENTHUSIAST • PROBLEM SOLVER          </motion.p>
 
           <motion.h1
   initial={{ opacity: 0, y: 40 }}
@@ -73,10 +72,7 @@ export default function Hero() {
             }}
             className="mt-4 max-w-2xl text-base leading-relaxed text-gray-400 sm:text-lg"
           >
-            I’m Ronak Saini — a Computer Science Engineer and Full Stack
-            Developer focused on building futuristic digital experiences,
-            scalable systems, cinematic interfaces, AI integrations,
-            and advanced frontend engineering.
+        I’m Ronak Saini, a Computer Science Engineering student and Full Stack Developer passionate about creating high-performance web applications, AI-powered solutions, and immersive user experiences using modern technologies.
           </motion.p>
 
           <motion.div
