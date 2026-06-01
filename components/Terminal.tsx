@@ -3,11 +3,13 @@
 import { motion } from "framer-motion";
 
 const lines = [
-  "> CSE Student @ BKBIET Pilani",
-  "> Solving Data Structures & Algorithms",
-  "> Building Full Stack Applications",
-  "> Exploring Artificial Intelligence",
-  "> Ready for new opportunities.",
+  "> Initializing RonakOS...",
+  "> Loading Full Stack Modules...",
+  "> Connecting MongoDB Cluster...",
+  "> Running Next.js Engine...",
+  "> Compiling DSA Knowledge Base...",
+  "> Activating AI Integrations...",
+  "> System Status: Online",
 ];
 
 export default function Terminal() {

@@ -4,23 +4,22 @@ import { motion } from "framer-motion";
 
 const stats = [
   {
-    number: "15+",
-    label: "Projects",
-  },
-  {
-    number: "300+",
-    label: "DSA Problems",
-  },
-  {
-    number: "5+",
+    number: "4+",
     label: "Hackathons",
   },
   {
-    number: "2+",
-    label: "Years Learning",
+    number: "12+",
+    label: "Technologies",
+  },
+  {
+    number: "4+",
+    label: "Projects",
+  },
+  {
+    number: "2027",
+    label: "Graduation",
   },
 ];
-
 export default function Stats() {
   return (
     <section className="relative z-10 px-6 py-32">

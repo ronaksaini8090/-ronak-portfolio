@@ -13,7 +13,7 @@ import Scene3D from "./Scene3D";
 export default function Hero() {
   return (
     <section className="relative z-10 flex min-h-screen items-center overflow-hidden px-6 pt-32 pb-20">
-
+      
       <Scene3D />
 
       <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/10 blur-[140px]" />
@@ -31,36 +31,37 @@ export default function Hero() {
             transition={{ duration: 1 }}
             className="mb-6 text-xs uppercase tracking-[0.35em] text-cyan-400 sm:text-sm"
           >
-FULL STACK DEVELOPER • CSE STUDENT • AI ENTHUSIAST • PROBLEM SOLVER          </motion.p>
+            FULL STACK DEVELOPER • CSE STUDENT • AI ENTHUSIAST • PROBLEM SOLVER
+          </motion.p>
 
           <motion.h1
-  initial={{ opacity: 0, y: 40 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1 }}
-  className="text-5xl md:text-7xl font-black leading-[0.95]"
->
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-5xl font-black leading-[0.95] md:text-7xl"
+          >
             Building
 
             <br />
 
             <span className="block min-h-[120px] md:min-h-[150px]">
-  <TypeAnimation
-    sequence={[
-      " futuristic systems",
-      1500,
-      " cinematic products",
-      1500,
-      " AI-powered platforms",
-      1500,
-      " immersive experiences",
-      1500,
-    ]}
-    wrapper="span"
-    speed={40}
-    repeat={Infinity}
-    className="text-cyan-400 block"
-  />
-</span>
+              <TypeAnimation
+                sequence={[
+                  " futuristic systems",
+                  1500,
+                  " cinematic products",
+                  1500,
+                  " AI-powered platforms",
+                  1500,
+                  " immersive experiences",
+                  1500,
+                ]}
+                wrapper="span"
+                speed={40}
+                repeat={Infinity}
+                className="block text-cyan-400"
+              />
+            </span>
           </motion.h1>
 
           <motion.p
@@ -72,9 +73,18 @@ FULL STACK DEVELOPER • CSE STUDENT • AI ENTHUSIAST • PROBLEM SOLVER       
             }}
             className="mt-4 max-w-2xl text-base leading-relaxed text-gray-400 sm:text-lg"
           >
-        I’m Ronak Saini, a Computer Science Engineering student and Full Stack Developer passionate about creating high-performance web applications, AI-powered solutions, and immersive user experiences using modern technologies.
+            I’m Ronak Saini, a Computer Science Engineering student and Full
+            Stack Developer passionate about creating high-performance web
+            applications, AI-powered solutions, and immersive user experiences
+            using modern technologies.
           </motion.p>
 
+          {/* Internship Notice */}
+          <p className="mt-6 font-semibold text-cyan-400">
+            Currently seeking Software Development Internship opportunities.
+          </p>
+
+          {/* Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -90,6 +100,10 @@ FULL STACK DEVELOPER • CSE STUDENT • AI ENTHUSIAST • PROBLEM SOLVER       
 
             <a href="/resume.pdf" download>
               <MagneticButton text="DOWNLOAD CV" />
+            </a>
+
+            <a href="#contact">
+              <MagneticButton text="HIRE ME" />
             </a>
           </motion.div>
 
@@ -116,8 +130,8 @@ FULL STACK DEVELOPER • CSE STUDENT • AI ENTHUSIAST • PROBLEM SOLVER       
           transition={{
             duration: 1.2,
           }}
-          className="relative flex justify-center lg:justify-end"        >
-
+          className="relative flex flex-col items-center lg:items-end"
+        >
           <div className="absolute h-[320px] w-[320px] rounded-full bg-cyan-500/10 blur-[120px] md:h-[450px] md:w-[450px]" />
 
           <div className="absolute h-[340px] w-[340px] rounded-full border border-cyan-400/20 shadow-[0_0_60px_rgba(34,211,238,0.18)] md:h-[500px] md:w-[500px]" />
@@ -134,9 +148,37 @@ FULL STACK DEVELOPER • CSE STUDENT • AI ENTHUSIAST • PROBLEM SOLVER       
                 width={500}
                 height={650}
                 priority
-                className="relative z-10 h-auto w-[260px] sm:w-[320px] md:w-[380px] lg:w-[420px] object-cover transition-transform duration-700 hover:scale-105"
+                className="relative z-10 h-auto w-[260px] object-cover transition-transform duration-700 hover:scale-105 sm:w-[320px] md:w-[380px] lg:w-[420px]"
               />
 
+            </div>
+
+          </div>
+
+          {/* Quick Stats */}
+          <div className="mt-6 grid w-full max-w-[420px] grid-cols-3 gap-4">
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-xl">
+              <h3 className="text-2xl font-black text-cyan-400">4+</h3>
+              <p className="text-xs text-gray-400">
+                Hackathons
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-xl">
+              <h3 className="text-2xl font-black text-cyan-400">6+</h3>
+              <p className="text-xs text-gray-400">
+                Certificates
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-xl">
+              <h3 className="text-2xl font-black text-cyan-400">
+                CSE
+              </h3>
+              <p className="text-xs text-gray-400">
+                Student
+              </p>
             </div>
 
           </div>

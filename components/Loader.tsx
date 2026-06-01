@@ -1,46 +1,46 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Loader() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2200);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <motion.div
-      initial={{ opacity: 1 }}
-      animate={{ opacity: 0 }}
-      transition={{
-        delay: 1,
-        duration: 0.6,
-      }}
-      className="pointer-events-none fixed inset-0 z-[9999] flex items-center justify-center bg-black"
-    >
-
-      <motion.div
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{
-          scale: 1,
-          opacity: 1,
-        }}
-        transition={{
-          duration: 1,
-        }}
-        className="text-center"
-      >
-
-        <h1 className="text-5xl font-black tracking-[0.5em] text-cyan-400 md:text-7xl">
-          RONAK
-        </h1>
-
+    <AnimatePresence>
+      {loading && (
         <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: "100%" }}
-          transition={{
-            duration: 2,
-          }}
-          className="mt-6 h-[2px] bg-cyan-400"
-        />
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black"
+        >
+          <motion.h1
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="text-5xl font-black text-cyan-400"
+          >
+            RONAK
+          </motion.h1>
 
-      </motion.div>
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: "220px" }}
+            transition={{ duration: 2 }}
+            className="mt-8 h-[4px] rounded-full bg-cyan-400"
+          />
 
-    </motion.div>
+          <p className="mt-4 text-sm tracking-[0.3em] text-gray-400">
+            LOADING PORTFOLIO
+          </p>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }

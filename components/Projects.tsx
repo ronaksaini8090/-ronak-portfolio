@@ -5,28 +5,30 @@ import Spotlight from "./Spotlight";
 import { motion } from "framer-motion";
 const projects = [
   {
-    title: "AI SaaS Platform",
-    desc: "A futuristic AI-powered SaaS dashboard with real-time analytics and automation.",
-    tech: ["Next.js", "AI", "Tailwind"],
-    demo: "#",
-    github: "#",
+    title: "Personal Portfolio",
+    desc: "Modern full stack portfolio built using Next.js, TypeScript, Tailwind CSS and Framer Motion with premium UI animations.",
+    tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    demo: "https://ronak-portfolio-beta.vercel.app",
+    github: "https://github.com/ronaksaini8090/-ronak-portfolio",
   },
+
   {
-    title: "3D Portfolio Experience",
-    desc:
-      "Immersive cinematic portfolio using Three.js and futuristic motion systems.",
-    tech: ["Three.js", "Framer Motion", "GSAP"],
+    title: "Upcoming Project",
+    desc: "Currently working on a new full stack application. Project details will be published soon.",
+    tech: ["React", "Node.js", "MongoDB"],
     demo: "#",
     github: "#",
   },
+
   {
-    title: "Cyberpunk Commerce",
-    desc:
-      "Next-generation eCommerce experience with advanced UI interactions.",
-    tech: ["React", "MongoDB", "Stripe"],
+    title: "Upcoming Project",
+    desc: "Currently building another project focused on scalability and modern user experience.",
+    tech: ["Next.js", "Express", "MongoDB"],
     demo: "#",
     github: "#",
   },
+
+  
 ];
 
 export default function Projects() {
@@ -100,22 +102,26 @@ export default function Projects() {
 
                   {/* Buttons */}
                   <div className="flex flex-wrap gap-4">
-                  <a
 
-                  href={project.demo} target="_blank" rel="noopener noreferrer"
-
+<a
+  href={project.demo}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-full border border-cyan-400 px-8 py-3 text-sm font-semibold tracking-widest text-cyan-400 transition-all duration-300 hover:bg-cyan-400 hover:text-black"
 >
-                    <button className="rounded-full border border-cyan-400 px-8 py-3 text-sm font-semibold tracking-widest text-cyan-400 transition-all duration-300 hover:bg-cyan-400 hover:text-black">
-                      LIVE DEMO
-                      </button>
-                      </a>
+  LIVE DEMO
+</a>
 
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" >
-                    <button className="rounded-full border border-white/20 px-8 py-3 text-sm font-semibold tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black">
-                      GITHUB
-                      </button>
-                      </a>
-                  </div>
+<a
+  href={project.github}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-full border border-white/20 px-8 py-3 text-sm font-semibold tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black"
+>
+  SOURCE CODE
+</a>
+
+</div>
 
                 </div>
 

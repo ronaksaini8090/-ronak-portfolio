@@ -1,4 +1,8 @@
 "use client";
+"use client";
+import Quote from "@/components/Quote";
+import Education from "@/components/Education";
+import Certifications from "@/components/Certifications";
 
 import ScrollProgress from "@/components/ScrollProgress";
 import FloatingDock from "@/components/FloatingDock";
@@ -47,8 +51,17 @@ export default function Home() {
       <div className="relative z-10">
         <Hero />
       </div>
+
       <div className="relative z-10">
   <About />
+      </div>
+
+      <div className="relative z-10">
+  <Education />
+</div>
+
+<div className="relative z-10">
+  <Certifications />
 </div>
       {/* Expertise */}
       <div className="relative z-10">
@@ -69,7 +82,7 @@ export default function Home() {
       <div className="relative z-10">
         <Experience />
       </div>
-
+    
       {/* Stats */}
       <div className="relative z-10">
         <Stats />
@@ -80,7 +93,7 @@ export default function Home() {
         <Terminal />
       </div>
 
-     
+      <Quote />
 
       {/* Contact */}
       <div className="relative z-10">

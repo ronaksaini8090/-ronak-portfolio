@@ -2,26 +2,25 @@
 
 import { motion } from "framer-motion";
 
-const skills = [
-  "C",
-  "C++",
-  "DSA",
-  "Java",
-  "javascript",
-  "Python",
 
-  "Next.js",
+const skills = [
+  "C++",
+  "Data Structures",
+  "Algorithms",
   "React",
+  "Next.js",
   "TypeScript",
   "Tailwind CSS",
+  "Framer Motion",
   "Node.js",
   "Express.js",
   "MongoDB",
   "Firebase",
-  "Git & GitHub",
+  "Git",
+  "GitHub",
+  "REST APIs",
   "AI Integration",
 ];
-
 export default function Skills() {
   return (
     <section
@@ -36,7 +35,7 @@ export default function Skills() {
         transition={{ duration: 1 }}
         className="mb-20 text-center text-5xl font-black tracking-wide text-white md:text-7xl"
       >
-        TECH <span className="text-cyan-400">STACK</span>
+        TECH <span className="text-cyan-400">ARSENAL</span>
       </motion.h2>
 
       {/* Skills Grid */}

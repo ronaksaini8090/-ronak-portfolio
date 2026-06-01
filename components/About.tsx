@@ -127,6 +127,9 @@ export default function About() {
           <p className="text-gray-400">
             Experienced in building scalable full stack applications.
           </p>
+          <p>
+  My long-term goal is to become a Software Engineer who builds products that impact millions of users while continuously learning and adapting to emerging technologies.
+</p>
 
         </motion.div>
 

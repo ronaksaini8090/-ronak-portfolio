@@ -76,3 +76,6 @@ body {
     transform: translateY(0px);
   }
 }
+html {
+  scroll-behavior: smooth;
+}

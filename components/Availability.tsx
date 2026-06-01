@@ -20,8 +20,7 @@ export default function Availability() {
       </div>
 
       <p className="text-sm uppercase tracking-[0.2em] text-green-300">
-        Available for opportunities
-      </p>
+      Open for Internships & Collaborations      </p>
 
     </motion.div>
   );

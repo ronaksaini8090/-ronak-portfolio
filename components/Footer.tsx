@@ -63,7 +63,7 @@ relative z-10 overflow-hidden border-t border-white/10 px-6 pt-14 pb-32" >
           </p>
 
           <p className="mt-2 text-xs uppercase tracking-[0.3em] text-cyan-400">
-            Built With Next.js
+          All rights reserved.
           </p>
 
         </div>
