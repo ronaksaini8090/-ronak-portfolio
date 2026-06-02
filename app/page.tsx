@@ -1,110 +1,64 @@
 "use client";
-"use client";
-import Quote from "@/components/Quote";
-import Education from "@/components/Education";
-import Certifications from "@/components/Certifications";
 
-import ScrollProgress from "@/components/ScrollProgress";
-import FloatingDock from "@/components/FloatingDock";
-import Loader from "@/components/Loader";
-
-import Cursor from "@/components/Cursor";
-import SmoothScroll from "@/components/SmoothScroll";
-import Navbar from "@/components/Navbar";
-
-import ParticleBackground from "@/components/Particles";
-import Aurora from "@/components/Aurora";
-import Hero from "@/components/Hero";
 import About from "@/components/About";
-
-import Expertise from "@/components/Expertise";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Stats from "@/components/Stats";
-import Terminal from "@/components/Terminal";
-
+import Achievements from "@/components/Achievements";
+import Aurora from "@/components/Aurora";
+import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
+import Cursor from "@/components/Cursor";
+import Education from "@/components/Education";
+import Experience from "@/components/Experience";
+import FloatingDock from "@/components/FloatingDock";
 import Footer from "@/components/Footer";
+import GitHubProfile from "@/components/GitHubProfile";
+import Hero from "@/components/Hero";
+import Loader from "@/components/Loader";
+import Navbar from "@/components/Navbar";
+import ParticleBackground from "@/components/Particles";
+import Projects from "@/components/Projects";
+import Quote from "@/components/Quote";
+import ResumeCTA from "@/components/ResumeCTA";
+import ScrollProgress from "@/components/ScrollProgress";
+import Skills from "@/components/Skills";
+import SmoothScroll from "@/components/SmoothScroll";
+import Stats from "@/components/Stats";
+import TechMarquee from "@/components/TechMarquee";
+import Terminal from "@/components/Terminal";
 
 export default function Home() {
   return (
-<main className="relative overflow-hidden bg-black text-white pb-40">
-      {/* Systems */}
+    <main className="relative overflow-hidden bg-black text-white">
       <ScrollProgress />
       <Loader />
       <Cursor />
       <SmoothScroll />
-
-      {/* Navigation */}
       <Navbar />
       <FloatingDock />
 
-      {/* Background */}
       <ParticleBackground />
       <Aurora />
 
-      {/* Grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:80px_80px]" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:80px_80px]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(34,211,238,0.08),transparent_35%),radial-gradient(circle_at_80%_60%,rgba(168,85,247,0.08),transparent_30%)]" />
 
-      {/* Hero */}
       <div className="relative z-10">
         <Hero />
-      </div>
-
-      <div className="relative z-10">
-  <About />
-      </div>
-
-      <div className="relative z-10">
-  <Education />
-</div>
-
-<div className="relative z-10">
-  <Certifications />
-</div>
-      {/* Expertise */}
-      <div className="relative z-10">
-        <Expertise />
-      </div>
-
-      {/* Projects */}
-      <div className="relative z-10">
-        <Projects />
-      </div>
-
-      {/* Skills */}
-      <div className="relative z-10">
-        <Skills />
-      </div>
-
-      {/* Experience */}
-      <div className="relative z-10">
-        <Experience />
-      </div>
-    
-      {/* Stats */}
-      <div className="relative z-10">
+        <About />
         <Stats />
-      </div>
-
-      {/* Terminal */}
-      <div className="relative z-10">
+        <Education />
+        <Certifications />
+        <Achievements />
+        <Projects />
+        <Skills />
+        <Experience />
+        <GitHubProfile />
+        <ResumeCTA />
         <Terminal />
-      </div>
-
-      <Quote />
-
-      {/* Contact */}
-      <div className="relative z-10">
+        <TechMarquee />
+        <Quote />
         <Contact />
-      </div>
-
-      {/* Footer */}
-      <div className="relative z-10">
         <Footer />
       </div>
-
     </main>
   );
 }

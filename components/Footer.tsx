@@ -1,75 +1,51 @@
 "use client";
 
-import { motion } from "framer-motion";
+const links = [
+  { name: "GitHub", href: "https://github.com/ronaksaini8090" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/ronak-saini-649bb3320/" },
+  { name: "Instagram", href: "https://www.instagram.com/ronaksaini773/" },
+  { name: "Email", href: "mailto:ronaksaini773@gmail.com" },
+];
 
 export default function Footer() {
   return (
-   <footer
-
-className="
-
-relative z-10 overflow-hidden border-t border-white/10 px-6 pt-14 pb-32" >
-
-      {/* Glow */}
+    <footer className="relative z-10 overflow-hidden border-t border-white/10 px-6 pb-32 pt-16">
       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 via-purple-500/5 to-pink-500/5" />
 
-      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 md:flex-row">
-
-        {/* Left */}
-        <div>
-
-          <h2 className="text-3xl font-black tracking-wide">
-            RONAK<span className="text-cyan-400">.</span>
+      <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="flex flex-col items-center text-center">
+          <h2 className="text-5xl font-black tracking-wide">
+            RONAK<span className="text-cyan-400"> SAINI</span>
           </h2>
-
-          <p className="mt-3 max-w-md text-sm leading-relaxed text-gray-400">
-            Full Stack Developer focused on futuristic interfaces,
-            AI-powered systems, scalable architecture, and cinematic digital experiences.
+          <p className="mt-5 max-w-2xl text-gray-400">
+            Full Stack Developer • Computer Science Engineering Student •
+            Building scalable web applications, AI-powered solutions and
+            immersive digital experiences.
           </p>
 
-        </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-6">
+            {links.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="text-gray-400 transition hover:text-cyan-400"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
 
-        {/* Center */}
-        <div className="flex gap-8 text-sm uppercase tracking-[0.3em] text-gray-400">
-
-          <a
-            href="/"
-            className="transition-all duration-300 hover:text-cyan-400"
-          >
-            Home
-          </a>
-
-          <a
-            href="#projects"
-            className="transition-all duration-300 hover:text-cyan-400"
-          >
-            Projects
-          </a>
-
-          <a
-            href="#contact"
-            className="transition-all duration-300 hover:text-cyan-400"
-          >
-            Contact
-          </a>
-
-        </div>
-
-        {/* Right */}
-        <div className="text-center md:text-right">
-
-          <p className="text-sm text-gray-400">
-            © 2026 Ronak Saini
+          <div className="mt-12 h-px w-full max-w-4xl bg-white/10" />
+          <p className="mt-8 text-sm text-gray-500">
+            © 2026 Ronak Saini. All Rights Reserved.
           </p>
-
           <p className="mt-2 text-xs uppercase tracking-[0.3em] text-cyan-400">
-          All rights reserved.
+            Built with Next.js • Tailwind CSS • Framer Motion
           </p>
-
         </div>
-
       </div>
-
     </footer>
   );
 }
