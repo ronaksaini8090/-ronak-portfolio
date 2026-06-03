@@ -10,7 +10,6 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import FloatingDock from "@/components/FloatingDock";
 import Footer from "@/components/Footer";
-
 import Hero from "@/components/Hero";
 import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
@@ -21,13 +20,12 @@ import ResumeCTA from "@/components/ResumeCTA";
 import ScrollProgress from "@/components/ScrollProgress";
 import Skills from "@/components/Skills";
 import SmoothScroll from "@/components/SmoothScroll";
-import Stats from "@/components/Stats";
 import TechMarquee from "@/components/TechMarquee";
 import Terminal from "@/components/Terminal";
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden bg-black text-white">
+    <main className="relative overflow-x-hidden bg-black text-white">
       <ScrollProgress />
       <Loader />
       <Cursor />
@@ -44,14 +42,12 @@ export default function Home() {
       <div className="relative z-10">
         <Hero />
         <About />
-        <Stats />
         <Education />
         <Certifications />
         <Achievements />
         <Projects />
         <Skills />
         <Experience />
-
         <ResumeCTA />
         <Terminal />
         <TechMarquee />

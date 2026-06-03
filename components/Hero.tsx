@@ -19,15 +19,14 @@ export default function Hero() {
       <div className="pointer-events-none absolute -right-20 top-20 h-[260px] w-[260px] rounded-full bg-purple-500/10 blur-[110px] sm:h-[320px] sm:w-[320px]" />
 
       <div className="mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-2">
-        {/* LEFT */}
-        <div className="relative z-50 flex flex-col">
+        <div className="relative z-50 flex min-w-0 flex-col">
           <Availability />
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="mb-6 max-w-full text-[10px] uppercase tracking-[0.18em] text-cyan-400 sm:text-xs sm:tracking-[0.3em]"
+            className="mb-6 max-w-full text-[10px] uppercase tracking-[0.16em] text-cyan-400 sm:text-xs sm:tracking-[0.3em]"
           >
             FULL STACK DEVELOPER • CSE STUDENT • AI ENTHUSIAST
           </motion.p>
@@ -43,13 +42,13 @@ export default function Hero() {
             <span className="block min-h-[92px] max-w-full break-words sm:min-h-[120px] md:min-h-[150px]">
               <TypeAnimation
                 sequence={[
-                  " scalable applications",
+                  " scalable apps",
                   1500,
-                  " AI-powered products",
+                  " AI products",
                   1500,
-                  " immersive interfaces",
+                  " clean interfaces",
                   1500,
-                  " modern web platforms",
+                  " web platforms",
                   1500,
                 ]}
                 wrapper="span"
@@ -86,38 +85,34 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="relative z-50 mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap"
+            className="relative z-50 mt-10 grid w-full gap-4 sm:flex sm:flex-wrap"
           >
-            <a href="#projects" className="w-full sm:w-auto">
+            <a href="#projects" className="block w-full sm:w-auto">
               <MagneticButton text="EXPLORE WORK" />
             </a>
 
-            <a href="/resume.pdf" download className="w-full sm:w-auto">
+            <a href="/resume.pdf" download className="block w-full sm:w-auto">
               <MagneticButton text="DOWNLOAD CV" />
             </a>
 
-            <a href="#contact" className="w-full sm:w-auto">
+            <a href="#contact" className="block w-full sm:w-auto">
               <MagneticButton text="HIRE ME" />
             </a>
           </motion.div>
 
-          {/* Social */}
           <div className="relative z-50 mt-10">
             <SocialIcons />
           </div>
 
-          {/* Tech */}
           <div className="relative z-50 mt-10">
             <TechStack />
           </div>
         </div>
 
-        {/* RIGHT */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -125,7 +120,6 @@ export default function Hero() {
           className="relative z-20 flex flex-col items-center lg:items-end"
         >
           <div className="pointer-events-none absolute h-[280px] w-[280px] rounded-full bg-cyan-500/10 blur-[120px] md:h-[450px] md:w-[450px]" />
-
           <div className="pointer-events-none absolute h-[300px] w-[300px] rounded-full border border-cyan-400/20 shadow-[0_0_60px_rgba(34,211,238,0.18)] md:h-[500px] md:w-[500px]" />
 
           <div className="relative overflow-hidden rounded-[35px] border border-white/10 bg-white/5 p-[1px] backdrop-blur-xl">

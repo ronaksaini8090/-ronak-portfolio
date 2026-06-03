@@ -27,7 +27,7 @@ const contactCards = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative z-10 px-6 py-40">
+    <section id="contact" className="relative z-10 overflow-x-hidden px-4 py-32 sm:px-6 md:py-40">
       <motion.div
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -41,12 +41,12 @@ export default function Contact() {
           <p className="mb-4 text-sm uppercase tracking-[0.5em] text-cyan-400">
             CONTACT
           </p>
-          <h2 className="text-5xl font-black leading-tight md:text-7xl">
+          <h2 className="break-words text-4xl font-black leading-tight md:text-7xl">
             LET'S BUILD
             <br />
             SOMETHING <span className="text-cyan-400">AMAZING</span>
           </h2>
-          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-gray-400">
+          <p className="mt-8 max-w-3xl text-base leading-relaxed text-gray-400 sm:text-lg">
             I'm currently open to internships, freelance work, collaborations
             and innovative software projects. If you have an opportunity or
             simply want to connect, feel free to reach out.
@@ -80,10 +80,10 @@ export default function Contact() {
             </h3>
           </div>
 
-          <div className="mt-12 flex flex-wrap gap-5">
+          <div className="mt-12 grid gap-4 sm:flex sm:flex-wrap">
             <a
               href="mailto:ronaksaini773@gmail.com"
-              className="inline-flex rounded-full border border-cyan-400 px-10 py-4 text-sm font-bold tracking-[0.3em] text-cyan-400 transition-all duration-300 hover:bg-cyan-400 hover:text-black"
+              className="inline-flex w-full items-center justify-center rounded-full border border-cyan-400 px-8 py-4 text-sm font-bold tracking-[0.22em] text-cyan-400 transition-all duration-300 hover:bg-cyan-400 hover:text-black sm:w-auto sm:px-10 sm:tracking-[0.3em]"
             >
               LET'S CONNECT
             </a>
@@ -91,7 +91,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/ronak-saini-649bb3320/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex rounded-full border border-white/20 px-10 py-4 text-sm font-bold tracking-[0.3em] text-white transition-all duration-300 hover:bg-white hover:text-black"
+              className="inline-flex w-full items-center justify-center rounded-full border border-white/20 px-8 py-4 text-sm font-bold tracking-[0.22em] text-white transition-all duration-300 hover:bg-white hover:text-black sm:w-auto sm:px-10 sm:tracking-[0.3em]"
             >
               LINKEDIN
             </a>

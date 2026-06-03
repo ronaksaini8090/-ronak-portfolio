@@ -14,10 +14,10 @@ export default function Footer() {
 
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="flex flex-col items-center text-center">
-          <h2 className="text-5xl font-black tracking-wide">
+          <h2 className="break-words text-4xl font-black tracking-wide sm:text-5xl">
             RONAK<span className="text-cyan-400"> SAINI</span>
           </h2>
-          <p className="mt-5 max-w-2xl text-gray-400">
+          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-gray-400 sm:text-base">
             Full Stack Developer • Computer Science Engineering Student •
             Building scalable web applications, AI-powered solutions and
             immersive digital experiences.

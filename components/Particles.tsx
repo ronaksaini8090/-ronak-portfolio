@@ -16,10 +16,10 @@ export default function ParticleBackground() {
             value: "transparent",
           },
         },
-        fpsLimit: 120,
+        fpsLimit: 60,
         particles: {
           number: {
-            value: 80,
+            value: 45,
           },
           color: {
             value: "#00ffff",
@@ -27,24 +27,24 @@ export default function ParticleBackground() {
           links: {
             enable: true,
             color: "#00ffff",
-            distance: 150,
-            opacity: 0.15,
+            distance: 140,
+            opacity: 0.12,
             width: 1,
           },
           move: {
             enable: true,
-            speed: 1,
+            speed: 0.8,
           },
           opacity: {
-            value: 0.4,
+            value: 0.3,
           },
           size: {
-            value: { min: 1, max: 3 },
+            value: { min: 1, max: 2.5 },
           },
         },
         detectRetina: true,
       }}
-      className="absolute inset-0 z-0"
+      className="pointer-events-none absolute inset-0 z-0"
     />
   );
 }

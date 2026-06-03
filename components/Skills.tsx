@@ -23,17 +23,18 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative z-10 px-6 py-32">
+    <section id="skills" className="relative z-10 overflow-x-hidden px-4 py-28 sm:px-6 md:py-32">
       <motion.h2
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="mb-20 text-center text-5xl font-black tracking-wide text-white md:text-7xl"
+        className="mb-16 break-words text-center text-4xl font-black tracking-wide text-white md:mb-20 md:text-7xl"
       >
         TECH <span className="text-cyan-400">ARSENAL</span>
       </motion.h2>
 
-      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 md:grid-cols-4">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
         {skills.map((skill, index) => (
           <motion.div
             key={skill.name}
@@ -41,15 +42,15 @@ export default function Skills() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.04, duration: 0.45 }}
-            whileHover={{ y: -10, scale: 1.05 }}
-            className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/40 hover:shadow-[0_0_35px_rgba(34,211,238,0.15)]"
+            whileHover={{ y: -8, scale: 1.03 }}
+            className="group relative overflow-hidden rounded-[24px] border border-white/10 bg-white/5 p-5 text-center backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/40 hover:shadow-[0_0_35px_rgba(34,211,238,0.15)] sm:rounded-[28px] sm:p-8"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             <div className="relative z-10">
-              <div className="mb-4 text-4xl font-black text-cyan-400 transition-all duration-300 group-hover:scale-125 group-hover:rotate-6">
+              <div className="mb-4 text-3xl font-black text-cyan-400 transition-all duration-300 group-hover:scale-125 group-hover:rotate-6 sm:text-4xl">
                 {skill.icon}
               </div>
-              <h3 className="text-lg font-bold tracking-wide text-white">
+              <h3 className="break-words text-sm font-bold tracking-wide text-white sm:text-lg">
                 {skill.name}
               </h3>
             </div>
