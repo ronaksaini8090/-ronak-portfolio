@@ -10,7 +10,7 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import FloatingDock from "@/components/FloatingDock";
 import Footer from "@/components/Footer";
-import GitHubProfile from "@/components/GitHubProfile";
+
 import Hero from "@/components/Hero";
 import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
@@ -51,7 +51,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Experience />
-        <GitHubProfile />
+
         <ResumeCTA />
         <Terminal />
         <TechMarquee />

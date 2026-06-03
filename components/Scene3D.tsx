@@ -2,7 +2,6 @@
 
 import { Canvas } from "@react-three/fiber";
 import { Float, OrbitControls } from "@react-three/drei";
-import { useEffect, useState } from "react";
 
 function Sphere() {
   return (
@@ -12,7 +11,8 @@ function Sphere() {
       floatIntensity={2}
     >
       <mesh>
-        <icosahedronGeometry args={[2, 1]} />
+        <icosahedronGeometry args={[2.1, 1]} />
+
         <meshStandardMaterial
           color="#22d3ee"
           wireframe
@@ -23,27 +23,27 @@ function Sphere() {
 }
 
 export default function Scene3D() {
-  const [desktop, setDesktop] = useState(false);
-
-  useEffect(() => {
-    setDesktop(window.innerWidth >= 1024);
-  }, []);
-
-  if (!desktop) return null;
-
   return (
-    <div className="absolute inset-0 -z-10 opacity-40">
-      <Canvas>
+    <div className="pointer-events-none absolute inset-0 -z-10 opacity-25 md:opacity-40">
+
+      <Canvas camera={{ position: [0, 0, 6] }}>
+
         <ambientLight intensity={1} />
+
         <directionalLight position={[2, 2, 5]} />
+
         <Sphere />
 
         <OrbitControls
           enableZoom={false}
+          enablePan={false}
+          enableRotate={false}
           autoRotate
           autoRotateSpeed={2}
         />
+
       </Canvas>
+
     </div>
   );
 }

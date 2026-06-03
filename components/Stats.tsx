@@ -3,10 +3,9 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { number: "2+", label: "Hackathons" },
-  { number: "2", label: "Certificates" },
-  { number: "16+", label: "Technologies" },
-  { number: "2027", label: "Graduation" },
+  { value: "4+", label: "Hackathons" },
+  { value: "6+", label: "Certificates" },
+  { value: "2023", label: "CSE Batch" },
 ];
 
 export default function Stats() {
